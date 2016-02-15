@@ -6,7 +6,8 @@ router = express.Router(),
     formidable = require('formidable'),
     fs = require('fs'),
     TITLE = 'formidable上传示例',
-    AVATAR_UPLOAD_FOLDER = '/avatar/'
+    AVATAR_UPLOAD_FOLDER = '/avatar/';
+var url = require('url');
 
 /* GET home page. */
 router.get('/', function(req, res) {
@@ -31,9 +32,11 @@ router.get('/', function(req, res) {
 
 router.post('/', function(req, res) {
 
+    console.log("///////////////////url:" +url.parse(req.url).pathname);
     var form = new formidable.IncomingForm();   //创建上传表单
     form.encoding = 'utf-8';        //设置编辑
     form.uploadDir = 'public' + AVATAR_UPLOAD_FOLDER;     //设置上传目录
+    console.log("///////////////////uploadUrl:" +form.uploadDir);
     form.keepExtensions = true;     //保留后缀
     form.maxFieldsSize = 2 * 1024 * 1024;   //文件大小
 

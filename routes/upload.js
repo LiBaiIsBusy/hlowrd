@@ -9,11 +9,27 @@ router = express.Router(),
     AVATAR_UPLOAD_FOLDER = '/avatar/'
 
 /* GET home page. */
-router.get('/upload', function(req, res) {
-    res.render('index', { title: TITLE });
+router.get('/', function(req, res) {
+    if(req.cookies.islogin)
+    {
+        console.log('cookies:' + req.cookies.islogin);
+        req.session.account = req.cookies.islogin;
+    }
+
+    if(req.session.account)
+    {
+        console.log('session:' + req.session.account);
+        res.locals.account = req.session.account;
+    }
+    else
+    {
+        res.redirect('/login');
+        return;
+    }
+    res.render('upload', { title: TITLE });
 });
 
-router.post('/upload', function(req, res) {
+router.post('/', function(req, res) {
 
     var form = new formidable.IncomingForm();   //创建上传表单
     form.encoding = 'utf-8';        //设置编辑

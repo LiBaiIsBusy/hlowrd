@@ -41,7 +41,7 @@ router.post('/', function(req, res) {
 
         if (err) {
             res.locals.error = err;
-            res.render('index', { title: TITLE });
+            res.render('upload', { title: TITLE });
             return;
         }
 
@@ -63,7 +63,7 @@ router.post('/', function(req, res) {
 
         if(extName.length == 0){
             res.locals.error = '只支持png和jpg格式图片';
-            res.render('index', { title: TITLE });
+            res.render('upload', { title: TITLE });
             return;
         }
 

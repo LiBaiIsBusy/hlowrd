@@ -18,7 +18,12 @@
     "formidable": "latest",
     "mysql": "latest",
     "grunt": "latest",
-    "grunt-contrib-uglify": "latest"
+    "grunt-contrib-uglify": "latest",
+    "mongodb": "latest",
+    "connect-flash": "latest",
+    "markdown": "0.5.0",
+    "connect-mongo": "latest",
+    "multer": "0.1.6"
   },
   "devDependencies": {
     "grunt-ts": "^5.3.2"

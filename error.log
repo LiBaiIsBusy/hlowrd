@@ -1,0 +1,12 @@
+[Thu Feb 18 2016 14:37:54 GMT+0800 (中国标准时间)] /
+Error: Error setting TTL index on collection : sessions
+    at e:\GitHub\N-blog-master\node_modules\connect-mongo\lib\connect-mongo.js:161:23
+    at e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\db.js:1404:28
+    at e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\db.js:1542:30
+    at e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\cursor.js:159:22
+    at commandHandler (e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\cursor.js:678:48)
+    at Db._executeQueryCommand (e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\db.js:1802:12)
+    at Cursor.nextObject (e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\cursor.js:729:13)
+    at Cursor.toArray (e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
+    at Cursor.toArray (e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\scope.js:10:20)
+    at e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\db.js:1541:65

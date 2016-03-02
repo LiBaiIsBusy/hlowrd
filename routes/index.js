@@ -281,7 +281,7 @@ module.exports = function(app) {
                date.getHours() + ":" + (date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes());
     var md5 = crypto.createHash('md5'),
         email_MD5 = md5.update(req.body.email.toLowerCase()).digest('hex'),
-        head = "http://www.gravatar.com/avatar/" + email_MD5 + "?s=48"; 
+        head = "https://secure.gravatar.com/" + email_MD5 + "?s=48";
     var comment = {
         name: req.body.name,
         head: head,

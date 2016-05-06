@@ -1,8 +1,12 @@
+var privateKey = '094a0721676ec75ea3bdf2ff2f9ecccc';
+var publicKey = '85b6408ae9b9d3cb3890dfaad5a61c67';
 var crypto = require('crypto'),
     fs = require('fs'),
     User = require('../models/user.js'),
     Post = require('../models/post.js'),
     Comment = require('../models/comment.js');
+var Geetest = require('../gt-sdk');
+var geetest = new Geetest(privateKey, publicKey);
 
 module.exports = function(app) {
   app.get('/', function (req, res) {
@@ -25,7 +29,46 @@ module.exports = function(app) {
       });
     });
   });
+  // 极验接口
+  app.get("/geetest/register", function (req, res) {
 
+    // 向极验申请一次验证所需的challenge
+    geetest.register(function (err, data) {
+      if (err) {
+        res.send(JSON.stringify({
+          gt: publicKey,
+          success: 0
+        }));
+      } else {
+        res.send(JSON.stringify({
+          gt: publicKey,
+          challenge: data,
+          success: 1
+        }));
+      }
+    });
+  });
+  app.post("/geetest/validate", function (req, res) {
+
+    // 对ajax提交的验证结果值进行验证
+    geetest.validate({
+      challenge: req.body.geetest_challenge,
+      validate: req.body.geetest_validate,
+      seccode: req.body.geetest_seccode
+    }, function (err, result) {
+
+      var data = {status: "success", info: '登录成功'};
+
+      if (err || !result) {
+
+        data.status = "fail";
+        data.info = '登录失败';
+      }
+
+      res.send(JSON.stringify(data));
+
+    });
+  });
   app.get('/reg', checkNotLogin);
   app.get('/reg', function (req, res) {
     res.render('reg', {

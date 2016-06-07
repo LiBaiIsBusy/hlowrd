@@ -2,7 +2,7 @@
 
 var crypto = require('crypto'),
     request = require('request'),
-    pkg = require("./package.json");
+    pkg = require("./../../package.json");
 
 var apiServer = 'http://api.geetest.com';
 

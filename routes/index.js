@@ -5,7 +5,7 @@ var crypto = require('crypto'),
     User = require('../models/user.js'),
     Post = require('../models/post.js'),
     Comment = require('../models/comment.js');
-var Geetest = require('../gt-sdk');
+var Geetest = require('../public/javascripts/gt-sdk');
 var geetest = new Geetest(privateKey, publicKey);
 
 module.exports = function(app) {

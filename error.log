@@ -10,3 +10,187 @@ Error: Error setting TTL index on collection : sessions
     at Cursor.toArray (e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\cursor.js:158:10)
     at Cursor.toArray (e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\scope.js:10:20)
     at e:\GitHub\N-blog-master\node_modules\connect-mongo\node_modules\mongodb\lib\mongodb\db.js:1541:65
+[Fri May 06 2016 14:40:47 GMT+0800 (中国标准时间)] /login
+SyntaxError: Unexpected token < in e:\GitHub\hlowrd\views\login.ejs while compiling ejs
+    at Function (native)
+    at Object.Template.compile (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (e:\GitHub\hlowrd\node_modules\express\lib\view.js:126:8)
+    at tryRender (e:\GitHub\hlowrd\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (e:\GitHub\hlowrd\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (e:\GitHub\hlowrd\node_modules\express\lib\response.js:961:7)
+    at e:\GitHub\hlowrd\routes\index.js:78:9
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:330:12)
+[Fri May 06 2016 14:40:54 GMT+0800 (中国标准时间)] /login
+SyntaxError: Unexpected token < in e:\GitHub\hlowrd\views\login.ejs while compiling ejs
+    at Function (native)
+    at Object.Template.compile (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:464:12)
+    at Object.compile (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:288:16)
+    at handleCache (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:147:16)
+    at View.exports.renderFile [as engine] (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:350:14)
+    at View.render (e:\GitHub\hlowrd\node_modules\express\lib\view.js:126:8)
+    at tryRender (e:\GitHub\hlowrd\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (e:\GitHub\hlowrd\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (e:\GitHub\hlowrd\node_modules\express\lib\response.js:961:7)
+    at e:\GitHub\hlowrd\routes\index.js:78:9
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:330:12)
+[Fri May 06 2016 14:41:18 GMT+0800 (中国标准时间)] /login
+ReferenceError: e:\GitHub\hlowrd\views\login.ejs:16
+    14| <!-- 引入封装了failback的接口--initGeetest -->
+    15| <script src="http://static.geetest.com/static/tools/gt.js"></script>
+ >> 16| <%  var handlerEmbed = function (captchaObj) {
+    17| 
+    18|         $("#embed-submit").click(function (e) {
+    19|             var validate = captchaObj.getValidate();
+
+$ is not defined
+    at eval (eval at <anonymous> (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:65:5)
+    at Template.compile.returnedFn (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\GitHub\hlowrd\node_modules\express\lib\view.js:126:8)
+    at tryRender (e:\GitHub\hlowrd\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (e:\GitHub\hlowrd\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (e:\GitHub\hlowrd\node_modules\express\lib\response.js:961:7)
+    at e:\GitHub\hlowrd\routes\index.js:78:9
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:330:12)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:271:10)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:121:14)
+[Fri May 06 2016 14:41:22 GMT+0800 (中国标准时间)] /login
+ReferenceError: e:\GitHub\hlowrd\views\login.ejs:16
+    14| <!-- 引入封装了failback的接口--initGeetest -->
+    15| <script src="http://static.geetest.com/static/tools/gt.js"></script>
+ >> 16| <%  var handlerEmbed = function (captchaObj) {
+    17| 
+    18|         $("#embed-submit").click(function (e) {
+    19|             var validate = captchaObj.getValidate();
+
+$ is not defined
+    at eval (eval at <anonymous> (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:65:5)
+    at Template.compile.returnedFn (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\GitHub\hlowrd\node_modules\express\lib\view.js:126:8)
+    at tryRender (e:\GitHub\hlowrd\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (e:\GitHub\hlowrd\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (e:\GitHub\hlowrd\node_modules\express\lib\response.js:961:7)
+    at e:\GitHub\hlowrd\routes\index.js:78:9
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:330:12)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:271:10)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:121:14)
+[Fri May 06 2016 14:41:23 GMT+0800 (中国标准时间)] /login
+ReferenceError: e:\GitHub\hlowrd\views\login.ejs:16
+    14| <!-- 引入封装了failback的接口--initGeetest -->
+    15| <script src="http://static.geetest.com/static/tools/gt.js"></script>
+ >> 16| <%  var handlerEmbed = function (captchaObj) {
+    17| 
+    18|         $("#embed-submit").click(function (e) {
+    19|             var validate = captchaObj.getValidate();
+
+$ is not defined
+    at eval (eval at <anonymous> (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:65:5)
+    at Template.compile.returnedFn (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\GitHub\hlowrd\node_modules\express\lib\view.js:126:8)
+    at tryRender (e:\GitHub\hlowrd\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (e:\GitHub\hlowrd\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (e:\GitHub\hlowrd\node_modules\express\lib\response.js:961:7)
+    at e:\GitHub\hlowrd\routes\index.js:78:9
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:330:12)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:271:10)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:121:14)
+[Fri May 06 2016 14:41:42 GMT+0800 (中国标准时间)] /login
+ReferenceError: e:\GitHub\hlowrd\views\login.ejs:16
+    14| <!-- 引入封装了failback的接口--initGeetest -->
+    15| <script src="http://static.geetest.com/static/tools/gt.js"></script>
+ >> 16| <%  var handlerEmbed = function (captchaObj) {
+    17| 
+    18|         $("#embed-submit").click(function (e) {
+    19|             var validate = captchaObj.getValidate();
+
+$ is not defined
+    at eval (eval at <anonymous> (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:65:5)
+    at Template.compile.returnedFn (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\GitHub\hlowrd\node_modules\express\lib\view.js:126:8)
+    at tryRender (e:\GitHub\hlowrd\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (e:\GitHub\hlowrd\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (e:\GitHub\hlowrd\node_modules\express\lib\response.js:961:7)
+    at e:\GitHub\hlowrd\routes\index.js:78:9
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:330:12)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:271:10)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:121:14)
+[Fri May 06 2016 14:41:45 GMT+0800 (中国标准时间)] /login
+ReferenceError: e:\GitHub\hlowrd\views\login.ejs:16
+    14| <!-- 引入封装了failback的接口--initGeetest -->
+    15| <script src="http://static.geetest.com/static/tools/gt.js"></script>
+ >> 16| <%  var handlerEmbed = function (captchaObj) {
+    17| 
+    18|         $("#embed-submit").click(function (e) {
+    19|             var validate = captchaObj.getValidate();
+
+$ is not defined
+    at eval (eval at <anonymous> (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:464:12), <anonymous>:65:5)
+    at Template.compile.returnedFn (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:493:17)
+    at View.exports.renderFile [as engine] (e:\GitHub\hlowrd\node_modules\ejs\lib\ejs.js:350:31)
+    at View.render (e:\GitHub\hlowrd\node_modules\express\lib\view.js:126:8)
+    at tryRender (e:\GitHub\hlowrd\node_modules\express\lib\application.js:639:10)
+    at EventEmitter.render (e:\GitHub\hlowrd\node_modules\express\lib\application.js:591:3)
+    at ServerResponse.render (e:\GitHub\hlowrd\node_modules\express\lib\response.js:961:7)
+    at e:\GitHub\hlowrd\routes\index.js:78:9
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:330:12)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:271:10)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:121:14)
+[Wed Jun 08 2016 01:55:22 GMT+0800 (中国标准时间)] /logout
+Error: Can't set headers after they are sent.
+    at ServerResponse.OutgoingMessage.setHeader (_http_outgoing.js:344:11)
+    at ServerResponse.header (e:\GitHub\hlowrd\node_modules\express\lib\response.js:718:10)
+    at ServerResponse.location (e:\GitHub\hlowrd\node_modules\express\lib\response.js:835:8)
+    at ServerResponse.redirect (e:\GitHub\hlowrd\node_modules\express\lib\response.js:874:8)
+    at e:\GitHub\hlowrd\routes\index.js:181:9
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)
+    at Route.dispatch (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:277:22
+    at Function.process_params (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:330:12)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\index.js:271:10)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:121:14)
+    at checkLogin (e:\GitHub\hlowrd\routes\index.js:423:5)
+    at Layer.handle [as handle_request] (e:\GitHub\hlowrd\node_modules\express\lib\router\layer.js:95:5)
+    at next (e:\GitHub\hlowrd\node_modules\express\lib\router\route.js:131:13)

@@ -1,9 +1,83 @@
 <%- include header %>
 <form method="post">
-  用户名：  <input type="text" name="name"/><br />
-  密码：    <input type="password" name="password"/><br />
-  确认密码：<input type="password" name="password-repeat"/><br />
-  邮箱：    <input type="email" name="email"/><br />
-            <input type="submit" value="注册"/>
+    <table>
+        <tr class="nickname">
+            <th>用户名： </th>
+            <th><input type="text" name="name" class="name"/></th>
+            <th class="nicknameTips"></th>
+        </tr>
+        <tr>
+            <th>密码：</th>
+            <th><input type="password" name="password" class="password"/></th>
+            <th class="passwordTips"></th>
+        </tr>
+        <tr>
+            <th>确认密码：</th>
+            <th><input type="password" name="password-repeat" class="password-repeat"/></th>
+            <th class="password_repeatTips"></th>
+        </tr>
+        <tr>
+            <th>邮箱：</th>
+            <th><input type="email" name="email" class="email"/></th>
+            <th class="emailTips"></th>
+        </tr>
+    </table>
+
+            <input type="submit" id="popup-submit"  value="注册"/>
 </form>
+<div id="popup-captcha"></div>
+<script src="../javascripts/jquery-2.2.0.min.js"></script>
+<!-- 引入封装了failback的接口--initGeetest -->
+<script src="http://static.geetest.com/static/tools/gt.js"></script>
+<script src="/javascripts/captcha.js"></script>
+<script src="/javascripts/reg.js"></script>
+<script>
+    var self = $(this);
+    $(".name").blur(function(){
+        var name = $(".name").val();
+       if(name==''||name==null){
+           $('.nicknameTips').addClass('tips-error').text("× 用户名不能为空");
+       }else{
+           $('.nicknameTips').removeClass('tips-error').text("");
+       }
+    });
+    $(".password").blur(function(){
+        var password = $(".password").val();
+        if(password==''||password==null){
+            $('.passwordTips').addClass('tips-error').text("× 密码不能为空");
+        }else {
+            $('.passwordTips').removeClass('tips-error').text("");
+        }
+    });
+    $(".password-repeat").blur(function(){
+        var password = $(".password").val();
+        var passwordRepeat = $(".password-repeat").val();
+        if(passwordRepeat==''||passwordRepeat==null){
+            $('.password_repeatTips').addClass('tips-error').text("× 重复密码不能为空");
+        }else {
+            if (password!=passwordRepeat){
+                $('.password_repeatTips').addClass('tips-error').text("× 两次密码不一致");
+            }else {
+                $('.password_repeatTips').removeClass('tips-error').text("");
+            }
+        }
+
+    });
+    $(".email").blur(function(){
+        var email = $(".email").val();
+        if(email==''||email==null){
+            $('.emailTips').addClass('tips-error').text("× 邮箱不能为空");
+        }else {
+//            $('.emailTips').removeClass('tips-error').text("");
+            var reg = /^([a-zA-Z0-9_-])+@([a-zA-Z0-9_-])+(.[a-zA-Z0-9_-])+/;
+            if(reg.test(email)==false){
+                $('.emailTips').addClass('tips-error').text("× 邮箱格式不正确");
+            }else {
+                $('.emailTips').removeClass('tips-error').text("");
+            }
+        }
+
+    });
+
+</script>
 <%- include footer %>

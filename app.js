@@ -11,8 +11,7 @@ var flash = require('connect-flash');
 var multer  = require('multer');
 
 var routes = require('./routes/index');
-var settings = require('./settings');
-
+var settings = require('./models/settings');
 var fs = require('fs');
 var accessLog = fs.createWriteStream('access.log', {flags: 'a'});
 var errorLog = fs.createWriteStream('error.log', {flags: 'a'});
